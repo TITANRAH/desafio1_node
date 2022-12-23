@@ -20,7 +20,12 @@ const leer = (filename) => {
   console.log(cita);
 };
 
+const vaciar = (filename) => {
+  fs.writeFileSync(filename, '[]');
+}
+
 module.exports = {
   registrar,
-  leer
+  leer,
+  vaciar
 };

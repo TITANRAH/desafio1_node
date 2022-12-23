@@ -1,4 +1,4 @@
-const { registrar, leer } = require("./operaciones");
+const { registrar, leer, vaciar } = require("./operaciones");
 
 const [operacion, nombreJson, nombre, edad, tipo, color, enfermedad] =
   process.argv.slice(3);
@@ -9,4 +9,8 @@ if (operacion === "registrar") {
 
 if (operacion === "leer") {
   leer(nombreJson);
+}
+
+if (operacion === "vaciar") {
+  vaciar(nombreJson);
 }
